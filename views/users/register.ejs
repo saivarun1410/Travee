@@ -1,0 +1,36 @@
+<% layout('layouts/boilerplate')%>
+  <link rel="stylesheet" href="stylesheets/login.css">
+  <div class="container-fluid d-flex justify-content-center align-items-center mt-0">
+    <div class="card shadow bg-dark text-white  register">
+      <img src="https://images.unsplash.com/photo-1558187424-f786111643b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bGVoJTIwbGFkYWtofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="" />
+      <div class="card-body">
+        <h3 class="card-title">Sign up</h3>
+        <form action="/register" method="post" novalidate class="validated-form">
+          <div class="mb-3">
+            <label class="form-label mb-0" for="username">Username</label>
+            <input class="form-control mb-2" type="text" id="username" name="username" required>
+            <div class="invalid-feedback">Oops! You forgot to name it!</div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label mb-0" for="password">Password</label>
+            <input class="form-control mb-2" type="password" id="password" name="password" required>
+            <div class="invalid-feedback">Oops! You forgot to name it!</div>
+          </div>
+          <div class="mb-3"> 
+            <label class="form-label mb-0" for="mail">E-mail</label>
+            <input class="form-control mb-2" type="email" id="mail" name="email" autofocus required>
+            <div class="invalid-feedback">Oops! You forgot to name it!</div>
+          </div>
+          <div class="d-grid">
+            <button class="btn btn-success btn-block rounded-pill">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <div class="container-fluid text-center">
+    <p>Already a user? <a style="text-decoration: none;" href="/login">Sign in</a></p>
+</div>
+  <script src="/javascript/validator.js"></script>
