@@ -31,5 +31,5 @@ Travee is inspired from yelp.com. Travee is a web Application in which users can
 * Flash messages are displayed
 * Every tourist spot has it's location displayed seperately on a map
  # Deployment :
- * Application on Heroku
- * Database on MongoDB Atlas
+ * Application on Heroku.
+ * Database on MongoDB Atlas.
